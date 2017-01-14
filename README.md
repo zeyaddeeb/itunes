@@ -11,9 +11,9 @@ The following functions are implemented:
 ```{r eval=FALSE}
 devtools::install_github("thelostscientist/itunes")
 ```
-```{r echo=FALSE, message=FALSE, warning=FALSE, error=FALSE}
-options(width=120)
-```
+
+
+
 ### Usage
 
 ```{r eval=FALSE}
@@ -24,6 +24,7 @@ reviews.df <- get_reviews(1161476603)
 
 
 ### Inspired by: Daniel Sequeira
+
 
 
 
