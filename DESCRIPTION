@@ -1,0 +1,9 @@
+Package: itunes
+Title: Interact with iTunes
+Version: 0.0.0.9000
+Authors@R: person("Zeyad", "Deeb", email = "zeyad.deeb@icloud.com", role = c("aut", "cre"))
+Description: Download top apps and associated reviews for your favoriate app
+Depends: R (>= 3.3.1)
+License: MIT
+Encoding: UTF-8
+LazyData: true
