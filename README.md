@@ -1,24 +1,6 @@
----
-output:
-  html_document:
-    keep_md: true
-  md_document:
-    variant: markdown_github
----
-
-<!-- README.md is generated from README.Rmd. Please edit that file -->
-
-```{r, echo = FALSE}
-knitr::opts_chunk$set(
-  collapse = TRUE,
-  comment = "#>",
-  fig.path = "README-",
-  fig.retina = 2
-)
-```
 
 
-itunes is an R package interface to the [iTunes RSS Feeds](http://www.apple.com/rss/)
+`itunes` is an R package interface to the [iTunes RSS Feeds](http://www.apple.com/rss/)
 
 The following functions are implemented:
 
