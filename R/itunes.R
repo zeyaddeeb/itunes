@@ -3,5 +3,5 @@
 #' @name itunes
 #' @docType package
 #' @author Zeyad Deeb (zeyad.deeb@icloud.com.com)
-#' @import httr jsonlite
+#' @import httr jsonlite xml2
 NULL

@@ -4,10 +4,10 @@
 \alias{get_top}
 \title{Get Top n Apps, Songs, Albums, Movies and more... from iTunes}
 \usage{
-get_top(media.types, n = 10)
+get_top(n = 10)
 }
 \arguments{
-\item{media.types}{defaults to current media types, see get_media_types for details}
+\item{media.types}{defaults to all current media types}
 }
 \value{
 Data Frame

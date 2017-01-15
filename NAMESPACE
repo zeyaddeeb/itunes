@@ -2,8 +2,8 @@
 
 export(get_reviews)
 export(get_top)
-export(list_media_types)
 import(httr)
 import(jsonlite)
+import(xml2)
 importFrom(jsonlite,fromJSON)
 importFrom(jsonlite,toJSON)

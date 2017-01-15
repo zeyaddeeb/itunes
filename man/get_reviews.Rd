@@ -16,5 +16,7 @@ Data Frame
 Get associated reviews with an iTunes id
 }
 \details{
-#TODO
+This function retrives all reviews associated with App, Podcast or Movie.
+The standard limit provided by Apple is 500 reviews, ie. if the object has more than
+500 reviews, the most recent 500 will be retrieved. This is a limitation of rss feeds
 }
