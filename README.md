@@ -60,7 +60,7 @@ top.df <- get_top(n=10)
 
 <br>
 
-### Inspired by: Daniel Sequeira
+### Inspired by: [Daniel Sequeira](https://twitter.com/danbras)
 
 <br>
 
