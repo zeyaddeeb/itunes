@@ -53,8 +53,8 @@ top.df <- get_top(n=10)
 
 ### Limitations
 
-- 1- Currently us is only implemented country.
-- 2- `get_reviews` is limited top most recent 500 reviews
+- Currently us is only implemented country.
+- `get_reviews` is limited top most recent 500 reviews
 
 
 
