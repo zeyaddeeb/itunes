@@ -10,7 +10,7 @@
 #'
 #' @examples
 #' \dontrun{
-#' top_stuff <- get_top("iOSApps", n=10)
+#' top_stuff <- get_top(n=10)
 #'
 #' @export
 
