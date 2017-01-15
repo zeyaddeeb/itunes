@@ -6,6 +6,13 @@ The following functions are implemented:
 
 - `get_reviews`: Download reviews associated with an App, Movie or Other
 
+The following functions are in progress:
+
+- `get_top_movies`: Get a list of top/trending Movies on iTunes + SubCategories
+- `get_top_hits`: Get a list of top/trending Songs on iTunes + SubCategories
+- `get_top_albums`:  Get a list of top/trending Albums on iTunes + SubCategories
+- `get_top_apps`:  Get a list of top/trending Apps on iTunes + SubCategories
+
 ### Installation
 
 ```{r eval=FALSE}
