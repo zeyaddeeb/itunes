@@ -58,8 +58,11 @@ top.df <- get_top(n=10)
 
 
 
+<br>
+
 ### Inspired by: Daniel Sequeira
 
+<br>
 
 ### Code of Conduct
 
