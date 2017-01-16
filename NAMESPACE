@@ -2,8 +2,8 @@
 
 export(get_reviews)
 export(get_top)
+export(search_itunes)
 import(httr)
 import(jsonlite)
+import(rvest)
 import(xml2)
-importFrom(jsonlite,fromJSON)
-importFrom(jsonlite,toJSON)

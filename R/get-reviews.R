@@ -1,3 +1,5 @@
+#' Get Reviews for a specific iTunes objects
+#' 
 #' @details This function retrives all reviews associated with App, Podcast or Movie.
 #' The standard limit provided by Apple is 500 reviews, ie. if the object has more than
 #' 500 reviews, the most recent 500 will be retrieved. This is a limitation of rss feeds 
@@ -8,12 +10,12 @@
 #'
 #' @param object.id iTunes object id from search (defaults to current top object)
 #'
-#' @return Data Frame
+#' @return data.frame
 #'
 #' @examples
 #' \dontrun{
-#' reviews <- get_reviews("itunes.id")
-#'
+#' reviews.df <- get_reviews(1161476603)
+#'}
 #' @export
 
 

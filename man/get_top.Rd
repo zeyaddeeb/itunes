@@ -13,6 +13,15 @@ get_top(n = 10)
 Data Frame
 }
 \description{
-This function returns the id(s) for the top 10 apps, that can be used to
+Get Top Trending iTunes Objects
+}
+\details{
+@description This function returns the id(s) for the top n apps, that can be used to
 pull reviews and ratings for a one or more apps
+}
+\examples{
+\dontrun{
+top_stuff <- get_top(n=10)
+}
+
 }

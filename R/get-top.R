@@ -1,16 +1,18 @@
-#' @description This function returns the id(s) for the top 10 apps, that can be used to
+#' Get Top Trending iTunes Objects
+#' 
+#'   @description This function returns the id(s) for the top n apps, that can be used to
 #' pull reviews and ratings for a one or more apps
 #'
 #' @title Get Top n Apps, Songs, Albums, Movies and more... from iTunes
 #'
 #' @param media.types defaults to all current media types
 #'
-#' @importFrom jsonlite toJSON fromJSON
 #' @return Data Frame
 #'
 #' @examples
 #' \dontrun{
 #' top_stuff <- get_top(n=10)
+#'}
 #'
 #' @export
 

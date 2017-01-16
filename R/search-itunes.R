@@ -1,11 +1,18 @@
-#' Title
+#' Search for an Podcast, App id on iTunes
 #'
 #' @param searchterm 
 #'
-#' @return
-#' @export
+#' @return data.frame
+
 #'
 #' @examples
+#' \dontrun{
+#' top_stuff <- search_itunes('Radiolab')
+#' }
+#' @export
+
+
+
 search_itunes <- function(searchterm=NULL){
   if(is.null(searchterm)){
     stop('Enter a search term')
