@@ -17,6 +17,7 @@ The following functions are in progress:
 ### Installation
 
 ```{r eval=FALSE}
+#install.packages("devtools")
 devtools::install_github("thelostscientist/itunes")
 ```
 
@@ -26,12 +27,12 @@ devtools::install_github("thelostscientist/itunes")
 
 ```{r eval=FALSE}
 library(itunes)
+
 reviews.df <- get_reviews(1161476603)
-```
-```{r eval=FALSE}
-library(itunes)
+
 top.df <- get_top(n=10)
 ```
+
 
 ### Current Limitations
 
