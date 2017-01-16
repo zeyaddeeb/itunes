@@ -7,7 +7,7 @@
 #'
 #' @param media.types defaults to all current media types
 #'
-#' @return Data Frame
+#' @return data.frame
 #'
 #' @examples
 #' \dontrun{

@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Get associated reviews with a specific iTunes object — get_reviews • itunes</title>
+<title>Search for an Podcast, App id on iTunes — search_itunes • itunes</title>
 
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script>
@@ -66,36 +66,29 @@
       <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Get associated reviews with a specific iTunes object</h1>
+    <h1>Search for an Podcast, App id on iTunes</h1>
     </div>
 
     
-    <p>Get associated reviews with an iTunes id</p>
+    <p>Search for an Podcast, App id on iTunes</p>
     
 
-    <pre><span class='fu'>get_reviews</span>(<span class='kw'>itunes.id</span> <span class='kw'>=</span> <span class='kw'>NULL</span>)</pre>
+    <pre><span class='fu'>search_itunes</span>(<span class='kw'>searchterm</span> <span class='kw'>=</span> <span class='kw'>NULL</span>)</pre>
     
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a> Arguments</h2>
     <dl class="dl-horizontal">
-      <dt>object.id</dt>
-      <dd>iTunes object id from search (defaults to current top object)</dd>
+      <dt>searchterm</dt>
+      <dd></dd>
     </dl>
     
     <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
     <p>data.frame</p>
     
-    <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
-
-    <p>Get Reviews for a specific iTunes objects</p>
-    <p>This function retrives all reviews associated with App, Podcast or Movie.
-The standard limit provided by Apple is 500 reviews, ie. if the object has more than
-500 reviews, the most recent 500 will be retrieved. This is a limitation of rss feeds</p>
-    
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'><span class='co'>## Not run: ------------------------------------</span>
-<span class='co'># reviews.df &lt;- get_reviews(1161476603)</span>
+<span class='co'># top_stuff &lt;- search_itunes('Radiolab')</span>
 <span class='co'>## ---------------------------------------------</span></div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
@@ -104,8 +97,6 @@ The standard limit provided by Apple is 500 reviews, ie. if the object has more 
       <li><a href="#arguments">Arguments</a></li>
       
       <li><a href="#value">Value</a></li>
-
-      <li><a href="#details">Details</a></li>
       
       <li><a href="#examples">Examples</a></li>
     </ul>

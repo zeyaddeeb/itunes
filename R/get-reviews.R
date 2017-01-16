@@ -8,7 +8,7 @@
 #' @title Get associated reviews with a specific iTunes object
 #'
 #'
-#' @param object.id iTunes object id from search (defaults to current top object)
+#' @param itunes.id iTunes object id from search (defaults to current top object)
 #'
 #' @return data.frame
 #'

@@ -49,6 +49,8 @@
 <ul>
 <li>
 <code>get_reviews</code>: Download reviews associated with an App, Movie or Other</li>
+<li>
+<code>get_top</code>: Search top n items based on iTunes downloads</li>
 </ul>
 <p>The following functions are in progress:</p>
 <ul>
@@ -71,16 +73,89 @@
 <div id="usage" class="section level3">
 <h3 class="hasAnchor">
 <a href="#usage" class="anchor"> </a>Usage</h3>
-<p><code>{r eval=FALSE} library(itunes) reviews.df &lt;- get_reviews(1161476603)</code></p>
+<p>```{r eval=FALSE} library(itunes) reviews.df &lt;- get_reviews(1161476603)</p>
+</div>
+<div id="a-tibble-108-7" class="section level1">
+<div class="page-header"><h1 class="hasAnchor">
+<a href="#a-tibble-108-7" class="anchor"> </a>&gt; # A tibble: 108 × 7</h1></div>
+</div>
+<div id="review-id-author-rating-review-title" class="section level1">
+<h1 class="hasAnchor">
+<a href="#review-id-author-rating-review-title" class="anchor"> </a>&gt; review.id author rating review.title</h1>
+</div>
+<div id="section" class="section level1">
+<h1 class="hasAnchor">
+<a href="#section" class="anchor"> </a>&gt;* <fctr><chr><chr><chr></chr></chr></chr></fctr>
+</h1>
+</div>
+<div id="tony-arndt-5-worth-the-money" class="section level1">
+<h1 class="hasAnchor">
+<a href="#tony-arndt-5-worth-the-money" class="anchor"> </a>&gt;1 1522194473 tony arndt 5 worth the money</h1>
+</div>
+<div id="hpburns-2-uninteresting" class="section level1">
+<h1 class="hasAnchor">
+<a href="#hpburns-2-uninteresting" class="anchor"> </a>&gt;2 1522188743 hpburns 2 Uninteresting</h1>
+</div>
+<div id="nader-hilmi-5-amazing" class="section level1">
+<h1 class="hasAnchor">
+<a href="#nader-hilmi-5-amazing" class="anchor"> </a>&gt;3 1522178622 Nader hilmi 5 Amazing!!!</h1>
+</div>
+<div id="michgro-1-a-complete-mess-of-a-film" class="section level1">
+<h1 class="hasAnchor">
+<a href="#michgro-1-a-complete-mess-of-a-film" class="anchor"> </a>&gt;4 1522150059 michgro 1 A complete mess of a film</h1>
+</div>
+<div id="benni-baby-cakes-5-dang" class="section level1">
+<h1 class="hasAnchor">
+<a href="#benni-baby-cakes-5-dang" class="anchor"> </a>&gt;5 1522133793 Benni Baby Cakes 5 Dang</h1>
+</div>
+<div id="lesliehenson-5-terrific-film" class="section level1">
+<h1 class="hasAnchor">
+<a href="#lesliehenson-5-terrific-film" class="anchor"> </a>&gt;6 1522010985 LeslieHenson 5 Terrific film</h1>
+</div>
+<div id="dragon77989789-4-ohonecanknowme" class="section level1">
+<h1 class="hasAnchor">
+<a href="#dragon77989789-4-ohonecanknowme" class="anchor"> </a>&gt;7 1521876920 Dragon77989789 4 ohonecanknowme</h1>
+</div>
+<div id="bouk_man-5-one-of-afflecks-best" class="section level1">
+<h1 class="hasAnchor">
+<a href="#bouk_man-5-one-of-afflecks-best" class="anchor"> </a>&gt;8 1521836888 bouk_man 5 One of Affleck’s best</h1>
+</div>
+<div id="poria-1-5-review" class="section level1">
+<h1 class="hasAnchor">
+<a href="#poria-1-5-review" class="anchor"> </a>&gt;9 1521745063 Poria 1 5 Review</h1>
+</div>
+<div id="ridgrunnr-5-fascinating-story" class="section level1">
+<h1 class="hasAnchor">
+<a href="#ridgrunnr-5-fascinating-story" class="anchor"> </a>&gt;10 1521684519 ridgrunnr 5 Fascinating story!</h1>
+</div>
+<div id="with-98-more-rows-and-3-more-variables-review-text-review-link-review-date" class="section level1">
+<h1 class="hasAnchor">
+<a href="#with-98-more-rows-and-3-more-variables-review-text-review-link-review-date" class="anchor"> </a>&gt;# … with 98 more rows, and 3 more variables: review.text <fctr>, review.link <chr>, review.date <chr></chr></chr></fctr>
+</h1>
+<p>```</p>
+<p>```{r eval=FALSE} library(itunes) top.df &lt;- get_top(n=10)</p>
+<p>```</p>
+<div id="limitations" class="section level3">
+<h3 class="hasAnchor">
+<a href="#limitations" class="anchor"> </a>Limitations</h3>
+<ul>
+<li>Currently us is only implemented country.</li>
+<li>
+<code>get_reviews</code> is limited top most recent 500 reviews</li>
+</ul>
+<p><br></p>
 </div>
 <div id="inspired-by-daniel-sequeira" class="section level3">
 <h3 class="hasAnchor">
-<a href="#inspired-by-daniel-sequeira" class="anchor"> </a>Inspired by: Daniel Sequeira</h3>
+<a href="#inspired-by-daniel-sequeira" class="anchor"> </a>Inspired by: <a href="https://twitter.com/danbras">Daniel Sequeira</a>
+</h3>
+<p><br></p>
 </div>
 <div id="code-of-conduct" class="section level3">
 <h3 class="hasAnchor">
 <a href="#code-of-conduct" class="anchor"> </a>Code of Conduct</h3>
 <p>Please note that this project is released with a Contributor Code of Conduct. By participating in this project you agree to abide by its terms.</p>
+</div>
 </div>
 
   </div>
