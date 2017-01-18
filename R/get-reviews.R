@@ -45,7 +45,7 @@ get_reviews <- function(itunes.id=NULL){
     reviews <- reviews[2:nrow(reviews),]
     colnames(reviews) <- c('review.id','author','rating','review.title','review.text',
                            'review.link')
-    reviews$ranking <- as.integer(reviews$ranking)
+    reviews$rating <- as.integer(reviews$rating)
     reviews$review.date <- review.dates
     reviews.df <- rbind.data.frame(reviews.df, reviews)
   }
