@@ -35,7 +35,6 @@ get_reviews <- function(itunes.id=NULL){
     entries_xml <- entries_xml[-1]
     review.dates <- xml2::xml_text(xml2::xml_children(entries_xml))[xml2::xml_name(xml2::xml_children(entries_xml))=='updated']
     entries_json <- response_json$feed$entry
-    entries_json <- entries_json[-1]
     reviews <- cbind(
       entries_json$id$label,
       entries_json$author$name,
@@ -43,6 +42,7 @@ get_reviews <- function(itunes.id=NULL){
       entries_json$title,
       entries_json$content$label,
       entries_json$author$uri)
+    reviews <- reviews[2:nrow(reviews),]
     colnames(reviews) <- c('review.id','author','rating','review.title','review.text',
                            'review.link')
     reviews$review.date <- review.dates
