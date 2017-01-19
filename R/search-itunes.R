@@ -3,7 +3,7 @@
 #' @param searchterm 
 #'
 #' @return data.frame
-
+#' @inheritParams rvest::read_html
 #'
 #' @examples
 #' \dontrun{
@@ -25,3 +25,11 @@ search_itunes <- function(searchterm=NULL){
     
   }
 }
+
+
+url.search <- paste0('https://linkmaker.itunes.apple.com/en-us/search?utf8=%E2%9C%93&term=', URLencode('radiolab'), '&cache=&country=us&mediaType=', 'books',)
+search.content <- read_html(url.search) %>% html_nodes('.result-container')
+
+search.content %>% html_nodes('.result') %>% html_children()
+
+url.search
