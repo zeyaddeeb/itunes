@@ -34,19 +34,19 @@ get_reviews <- function(itunes.id=NULL){
     entries_xml <- xml2::xml_children(response_xml)[xml2::xml_name(xml2::xml_children(response_xml))=='entry']
     entries_xml <- entries_xml[-1]
     review.dates <- xml2::xml_text(xml2::xml_children(entries_xml))[xml2::xml_name(xml2::xml_children(entries_xml))=='updated']
-    entries <- response_json$feed$entry
+    entries_json <- response_json$feed$entry
+    entries_json <- entries_json[-1]
     reviews <- cbind(
-      entries$id$label,
-      entries$author$name,
-      entries$`im:rating`,
-      entries$title,
-      entries$content$label,
-      entries$author$uri)
-    reviews <- reviews[2:nrow(reviews),]
+      entries_json$id$label,
+      entries_json$author$name,
+      entries_json$`im:rating`,
+      entries_json$title,
+      entries_json$content$label,
+      entries_json$author$uri)
     colnames(reviews) <- c('review.id','author','rating','review.title','review.text',
                            'review.link')
-    reviews$rating <- as.integer(reviews$rating)
     reviews$review.date <- review.dates
+    reviews$rating <- as.integer(reviews$rating)
     reviews.df <- rbind.data.frame(reviews.df, reviews)
   }
   return(reviews.df)
