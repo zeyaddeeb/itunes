@@ -10,7 +10,7 @@ get_top(n = 10)
 \item{media.types}{defaults to all current media types}
 }
 \value{
-Data Frame
+data.frame
 }
 \description{
 Get Top Trending iTunes Objects

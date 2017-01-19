@@ -7,7 +7,7 @@
 get_reviews(itunes.id = NULL)
 }
 \arguments{
-\item{object.id}{iTunes object id from search (defaults to current top object)}
+\item{itunes.id}{iTunes object id from search (defaults to current top object)}
 }
 \value{
 data.frame
